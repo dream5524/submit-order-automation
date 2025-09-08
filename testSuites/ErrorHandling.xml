@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel = "tests" name="Suite">
+
+	<groups>
+	<run>
+		<include name ="ErrorValidation"></include>
+	</run>
+	
+	</groups>
+
+    <test name="Submit Order Test" thread-count="1">
+        <classes>
+            <class name="dream.tests.SubmitOrder"/>
+        </classes>
+    </test>
+
+    <test name="Error Validation Test" thread-count="5">
+        <classes>
+            <class name="dream.tests.ErrorValidations"/>
+        </classes>
+    </test>
+
+</suite>
